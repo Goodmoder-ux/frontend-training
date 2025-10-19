@@ -9,3 +9,6 @@ Route::get('/', function () {
 Route::get('/ninjas', function () {
     return view('ninjas.index');
 });
+Route::get('/info', function () {
+    return view('ninjas.info');
+});

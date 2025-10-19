@@ -11,5 +11,8 @@
     <p>Click on the link below to view currently availables ninjas!</p>
 
     <a href="/ninjas">Find ninjas</a>
+
+    <p>Click on the link to find all indormation</p>
+    <a href="/info">Info</a>
 </body>
 </html>
