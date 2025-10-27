@@ -15,9 +15,6 @@ Route::get('/ninjas', function () {
     ];
     return view('ninjas.index', ["greeting" => "hello", "ninjas" => $ninjas]);
 });
-Route::get('/info', function () {
-    return view('ninjas.info');
-});
 
 Route::get('/ninjas/create', function () {
     return view('ninjas.create');
