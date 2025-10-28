@@ -1,6 +1,6 @@
-@props(['highlights' => false])
+@props(['highlight' => false])
 
-<div @class(['highlights' => $highlights, 'card'])>
+<div @class(['highlight' => $highlight, 'card'])>
     {{$slot}}
-    <a href="{{$attributes}}" class="btn">View details</a>
+    <a href="{{$attributes->get('href')}}" class="btn">View details</a>
 </div>
