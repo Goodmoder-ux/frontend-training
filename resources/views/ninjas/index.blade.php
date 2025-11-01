@@ -1,5 +1,5 @@
 <x-layout>
-    <h2>Currently availables ninjas</h2>
+    
     <ul>
         @foreach($ninjas as $ninja)
             <li>
@@ -9,5 +9,5 @@
             </li>
         @endforeach
     </ul>
-    <a href="/">Go back!</a>
+    <a class="btn" href="/">Go back!</a>
 </x-layout>

@@ -10,10 +10,10 @@
 
 </head>
 <body class="text-center px-8 py-12">
-    <h1>Welcome to my website</h1>
+    <h1>Welcome to Goodmoder`s Network</h1>
     <p>Click on the link below to view currently availables ninjas!</p>
 
-    <a href="/ninjas" class="ntn mt-4 inline-block">Find ninjas</a>
+    <a class="btn" href="/ninjas" class="ntn mt-4 inline-block">Find ninjas</a>
 
 </body>
 </html>

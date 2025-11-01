@@ -13,56 +13,81 @@
 
 @import url(https://fonts.googleapis.com/css?family=Rubik:regular600,700,800,900,italic,500italic,700italic,800italic,900italic);
 body {
-    @apply bg-gray-100 text-gray-700;
-    font-family: "Rubik";
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(235, 235, 235);
 }
 h1 {
-    @apply text-xl font-bold text-red-500;
-}
-h2 {
-    @apply text-xl font-bold my-4;
-}
-h3 {
-    @apply text-lg font-bold my-4;
-}
-ul {
-    @apply my-10;
-}
-p {
-    @apply my-2;
-}
-
-/* ========Header======== */
-
-header {
-    @apply bg-white;
-
-    nav {
-        @apply flex items-center gap-5 max-w-screen-lg px-12 py-12 mx-auto;
-    }
-    h1 {
-        @apply mr-auto;
-    }
-}
-
-form {
-    @apply max-w-screen-5m;
-}
-input,
-select,
-textarea {
-    @apply block w-full mt-2 mb-4 p-2;
-}
-
-.container {
-    @apply max-w-screen-lg mx-auto px-12 py-8;
-}
-.card {
-    @apply bg-white rounded border border-gray-200 px-3 py-3 my-2 flex justify-between items-center;
-}
-.highlight {
-    @apply border-1-4 border-1-red-500;
+    color: #cc5151;
+    font-size: 20px;
+    font-weight: 700;
 }
 .btn {
-    @apply rounded px-3 py-2 bg-gray-200 hover:bg-red-500 hover:text-white;
+    display: inline-block;
+    text-align: center;
+
+    font-weight: 300;
+    color: #525252;
+    text-decoration: none;
+    cursor: pointer;
+
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+[class*="__container"] {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+/* Ефекти при наведенні та фокусі для всіх кнопок */
+.btn:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -4px rgba(0, 0, 0, 0.1); /* hover:shadow-lg */
+}
+
+header {
+    background-color: #fff;
+}
+.header__container {
+    min-height: 103px;
+    padding-top: 10px;
+    display: flex;
+    column-gap: 10px;
+    row-gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #434343;
+}
+h3 {
+    font-weight: 700;
+}
+.ninjas {
+    padding: 20px 0;
+}
+.ninjas h2 {
+    margin-bottom: 30px;
+}
+.card {
+    min-height: 90px;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    border: 1px solid red;
 }

@@ -10,14 +10,20 @@
 </head>
 <body>
     <header>
-        <nav>
+        <div class="header__container">
             <h1>Goodmoder Network</h1>
-            <a class="btn" href="/ninjas">All ninjas</a>
-            <a class="btn" href="/ninjas/create">Create ninjas</a>
-        </nav>
+            <nav>
+                <a class="btn" href="/ninjas">All ninjas</a>
+                <a class="btn" href="/ninjas/create">Create ninjas</a>
+            </nav>
+        </div>
     </header>
-    <main class="container">
-        {{$slot}}
+    <main class="main__container">
+        <div class="ninjas">
+            <h2>Currently availables ninjas</h2>
+            {{$slot}}
+        </div>
+        
     </main>
 </body>
 </html>
