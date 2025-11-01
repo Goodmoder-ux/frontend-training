@@ -13,8 +13,8 @@
         <div class="header__container">
             <h1>Goodmoder Network</h1>
             <nav>
-                <a class="btn" href="/ninjas">All ninjas</a>
-                <a class="btn" href="/ninjas/create">Create ninjas</a>
+                <a class="btn" href="{{ route('ninjas.index') }}">All ninjas</a>
+                <a class="btn" href="{{ route('ninjas.create') }}">Create ninjas</a>
             </nav>
         </div>
     </header>
