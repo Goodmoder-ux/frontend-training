@@ -7,13 +7,13 @@ use App\Models\Ninja;
 class NinjaController extends Controller
 {
     public function index() {
-        $ninjas = Ninja::orderBy('created_at', 'desc')->get();
+        $ninjas = Ninja::with('dojo')->orderBy('created_at', 'desc')->paginate(10);
 
         return view('ninjas.index', ["ninjas" => $ninjas]);
     }
     
     public function show($id) {
-        $ninja = Ninja::findOrFail($id);
+        $ninja = Ninja::with('dojo')->findOrFail($id);
         
         return view('ninjas.show', ["ninja" => $ninja]);
     }
