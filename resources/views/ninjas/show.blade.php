@@ -10,4 +10,11 @@
         <p><strong>Dogo location: </strong>{{$ninja->dojo->location}}</p>
         <p><strong>Dogo description: </strong>{{$ninja->dojo->description}}</p>
     </div>
+
+    <form action="{{ route('ninjas.destroy', $ninja->id) }}" method="POST">
+        @csrf
+
+        @method('DELETE')
+        <button type="submit">Delete</button>
+    </form>
 </x-layout>

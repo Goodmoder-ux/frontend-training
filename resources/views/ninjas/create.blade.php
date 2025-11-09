@@ -4,19 +4,21 @@
         <h2>Create a New Ninja</h2>
 
         <label for="name">Ninja Name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name" value="{{old('name')}}" required>
 
         <label for="skill">Ninja Skill (1-100):</label>
-        <input type="number" id="skill" name="skill" required>
+        <input type="number" id="skill" name="skill" value="{{old('skill')}}" required>
 
         <label for="bio">Biography:</label>
-        <textarea name="bio" rows="5"  id="bio" required></textarea>
+        <textarea name="bio" rows="5"  id="bio" required>{{old('skill')}}</textarea>
 
         <label for="dojo_id">Dojo:</label>
         <select name="dojo_id" id="dojo_id">
             <option value=""  disabled selected required>Select a dojo</option>
             @foreach($dojos as $dojo)
-                <option value="{{$dojo->id}}">{{$dojo ->name}}</option>
+                <option value="{{$dojo->id}}" {{ $dojo->id == old('dojo_id') ? 'selected' : '' }}>
+                    {{$dojo ->name}}
+                </option>
             @endforeach
         </select>
 
