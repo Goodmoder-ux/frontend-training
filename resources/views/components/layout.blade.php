@@ -20,7 +20,7 @@
     </header>
     <main class="main__container">
         <div class="ninjas">
-            <h2>Currently availables ninjas</h2>
+            
             {{$slot}}
         </div>
         

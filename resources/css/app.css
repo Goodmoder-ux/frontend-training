@@ -91,3 +91,22 @@ h3 {
 .highlight {
     border: 1px solid red;
 }
+
+form {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+input,
+textarea,
+select,
+button {
+    background-color: white;
+    padding: 10px;
+}
+input,
+select {
+    height: 50px;
+}
